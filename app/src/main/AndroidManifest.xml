@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.sofex.com.facialmap">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera2.full" />
+    <uses-permission
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mapa_logo_circle_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/mapa_logo_circle_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Paciente.Excluir.Excluir_Detail"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Paciente.Alterar.Alterar_Detail"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Mapeamento.Mapear.Preencher_Mapa_Part2"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Preview.PreviewCamera"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Mapeamento.Mapear.Marcar_Pontos"
+            android:theme="@style/FacialMap" />
+        <activity android:name=".Camera.CameraMascara" />
+        <activity
+            android:name=".Comparacao.Comparacao"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Paciente.EditorPaciente"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Paciente.Paciente_Encontrado"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Mapeamento.Carregar.Upload_Foto_Mapa"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Mapeamento.Excluir.Excluir_Mapa"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Mapeamento.Alterar.Remapear.Remap_Reupload_Foto"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Mapeamento.Alterar.Remapear.Remap_Mapeamento_Checagem"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Mapeamento.Alterar.Remapear.Remap_Mapear_Foto"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Mapeamento.Alterar.Remapear.Remap_Fotografar"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Mapeamento.Alterar.Alterar_Mapa"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Mapeamento.Mapear.Mapeamento_Checagem"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Mapeamento.Mapear.Adicionar_Pontos"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Mapeamento.Mapear.Fotografar"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Mapeamento.Menu_Mapeamento"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Paciente.Procurar.Listar_Pacientes"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Paciente.Alterar.Alterar_Paciente"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Paciente.Excluir.Excluir_Paciente"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Paciente.Cadastro.Cadastro_Paciente"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Estatisticas.Estatisticas"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Paciente.Procurar.Procurar_Paciente"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Paciente.Procurar.PacienteInfo"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Paciente.PacienteMenu"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Login.RecoverLogin"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Login.CadastroLogin"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Sofex.AboutSofex"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Sofex.SofexSolucoes"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Sofex.AboutFacialMap"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Apresentacao2"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".Apresentacao1"
+            android:theme="@style/Sofex_Apresentacao">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.Login"
+            android:theme="@style/FacialMap" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/FacialMap_NoActionBar">
+
+            <!--
+                  <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                  </intent-filter>
+            -->
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="br.sofex.com.facialmap.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

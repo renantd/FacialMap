@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C7C9CA"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.85"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#C7C9CA"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:id="@+id/RL_PacFounds"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <ImageView
+                                        android:id="@+id/img_perfilFoundListar"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="2dp"
+                                        android:layout_marginTop="2dp"
+                                        android:layout_marginEnd="2dp"
+                                        android:layout_marginBottom="2dp"
+                                        app:srcCompat="@drawable/logotipo" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="@drawable/roundedshapeblue"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/textView4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Informações do Paciente"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="24sp" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        app:srcCompat="@android:drawable/ic_dialog_info" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#C7C9CA"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="8dp">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:id="@+id/textView2"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="18dp"
+                                                    android:text="Nome:"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1">
+
+                                                <TextView
+                                                    android:id="@+id/Pac_NomeFoundListar"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="TextView"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+
+
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="8dp"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textView3"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="18dp"
+                                                    android:text="Documento:"
+                                                    android:textAlignment="textStart"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/Doc_PacFoundListar"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginTop="4dp"
+                                                        android:text="TextView"
+                                                        android:textAlignment="center"
+                                                        android:textColor="#000000"
+                                                        android:textSize="18sp" />
+
+                                                </LinearLayout>
+
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="8dp">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textView62"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Valor do Documento:"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/Doc_ValueFoundListar"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginTop="4dp"
+                                                        android:text="TextView"
+                                                        android:textAlignment="center"
+                                                        android:textColor="#000000"
+                                                        android:textSize="18sp" />
+                                                </LinearLayout>
+
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="8dp">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textView8"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="18dp"
+                                                    android:text="Nascionalidade:"
+                                                    android:textAlignment="textStart"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/Nasc_PacFoundListar"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="TextView"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="8dp">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textView20"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="18dp"
+                                                    android:text="Etinia:"
+                                                    android:textAlignment="textStart"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center|left">
+
+                                                <TextView
+                                                    android:id="@+id/Etnia_PacFoundListar"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="TextView"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="8dp">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textView11"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="18dp"
+                                                    android:text="Data. Nasc:"
+                                                    android:textAlignment="textStart"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/DataNasc_PacFoundListar"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="TextView"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="8dp"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textView21"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="18dp"
+                                                    android:text="Sexo:"
+                                                    android:textAlignment="textStart"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/Sexo_PacFoundListar"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="TextView"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="8dp"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textView12"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="18dp"
+                                                    android:text="Fixo:       "
+                                                    android:textAlignment="textStart"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/TelFixo_PacFoundListar"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="TextView"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="8dp"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textView15"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="18dp"
+                                                    android:text="Celular:  "
+                                                    android:textAlignment="textStart"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/TelCel_PacFoundListar"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="TextView"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="8dp"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textView26"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="18dp"
+                                                    android:text="E-mail:    "
+                                                    android:textAlignment="textStart"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/Email_PacFoundListar"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="TextView"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="8dp"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textView27"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="18dp"
+                                                    android:text="CEP:    "
+                                                    android:textAlignment="textStart"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/CEP_PacFoundListar"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="TextView"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="15dp"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textView28"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="18dp"
+                                                    android:gravity="center"
+                                                    android:text="Endereço: "
+                                                    android:textAlignment="textStart"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.7"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/End_PacFoundListar"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="TextView"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="15dp"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textView29"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="18dp"
+                                                    android:text="Complemento:"
+                                                    android:textAlignment="textStart"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.7"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/Comp_PacFoundListar"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="TextView"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="15dp"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textView30"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="18dp"
+                                                    android:text="Número:    "
+                                                    android:textAlignment="textStart"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.7"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/Num_PacFoundListar"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="TextView"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="15dp"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textView31"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="18dp"
+                                                    android:text="Bairro:    "
+                                                    android:textAlignment="textStart"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.7"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/Bairro_PacFoundListar"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="TextView"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="15dp"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textView32"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="18dp"
+                                                    android:text="Município:"
+                                                    android:textAlignment="textStart"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.7"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/Munic_PacFoundListar"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="TextView"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="60dp"
+                                        android:layout_marginTop="15dp"
+                                        android:gravity="center">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textView16"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="18dp"
+                                                    android:gravity="center"
+                                                    android:text="Estado:"
+                                                    android:textAlignment="textStart"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="0.7"
+                                                android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/Estado_PacFoundListar"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="TextView"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000000"
+                                                    android:textSize="18sp" />
+                                            </RelativeLayout>
+
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </ScrollView>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.11">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundedshapered">
+
+                    <Button
+                        android:id="@+id/BtnBackHomePacFound"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerHorizontal="false"
+                        android:layout_centerVertical="false"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/bg_icon_transparent"
+                        android:paddingTop="50dp"
+                        android:text="Menu do Principal"
+                        android:textColor="#FFFFFF" />
+
+                    <ImageView
+                        android:id="@+id/imageView41"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/home_72x72_white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundedshapered"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/BtnBackPacFound"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/bg_icon_transparent"
+                        android:paddingTop="50dp"
+                        android:text="Voltar"
+                        android:textColor="#FFFFFF" />
+
+                    <ImageView
+                        android:id="@+id/imageView43"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/back_white_72x72" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

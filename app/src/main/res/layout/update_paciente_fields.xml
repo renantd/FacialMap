@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#726E6E"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/logotipo" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Facial Map - Atualizar Dados"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textView57"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="#23A4CA"
+                                        android:padding="5dp"
+                                        android:text="Dados Pessoais"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/Edit_NomePacUpdate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="80dp"
+                                        android:ems="10"
+                                        android:hint="Digite o nome do paciente"
+                                        android:inputType="textPersonName"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp">
+
+                                    <TextView
+                                        android:id="@+id/textView60"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp"
+                                        android:gravity="center"
+                                        android:text="Documento:"
+                                        android:textSize="18sp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.2"
+                                        android:gravity="center">
+
+                                        <Spinner
+                                            android:id="@+id/Spin_DocUpdate"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/TL_DocResult"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:id="@+id/CadPacDocLabelUpdate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="5dp"
+                                        android:gravity="center|left"
+                                        android:text="{Documento}"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <EditText
+                                        android:id="@+id/CadPacDocValueUpdate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="{Valor do Documento}"
+                                        android:textAlignment="center"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+                                    android:ems="10"
+                                    android:inputType="textPersonName"
+                                    android:text="Name" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp">
+
+                                    <TextView
+                                        android:id="@+id/textView77"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp"
+                                        android:gravity="center"
+                                        android:text="Nacionalidade:"
+                                        android:textAlignment="center"
+                                        android:textSize="18sp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/Spin_NacUpdate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:layout_marginLeft="10dp">
+
+                                    <TextView
+                                        android:id="@+id/textView94"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:text="                 Etnia:"
+                                        android:textSize="18sp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/Spin_EtniaUpdate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp">
+
+                                    <TextView
+                                        android:id="@+id/textView78"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="50dp"
+                                        android:text="Data de Nascimento:"
+                                        android:textAlignment="center"
+                                        android:textSize="18sp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <EditText
+                                        android:id="@+id/Edit_DtNascUpdate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:ems="10"
+                                        android:inputType="none|datetime"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000" />
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/textView79"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Sexo:"
+                                        android:textAlignment="center"
+                                        android:textSize="18sp" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:layout_weight="1">
+
+                                    <RadioGroup
+                                        android:id="@+id/RadioSexoUpdate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <RadioButton
+                                            android:id="@+id/RB_MascUpdate"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:text="Masculino" />
+
+                                        <RadioButton
+                                            android:id="@+id/RB_FemUpdate"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:text="Feminino" />
+
+                                    </RadioGroup>
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#23A4CA">
+
+                                <TextView
+                                    android:id="@+id/textView80"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+                                    android:text="Dados de Contato"
+                                    android:textAlignment="center"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <EditText
+                                    android:id="@+id/Edit_TelFixoUpdate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:ems="10"
+                                    android:hint="Telefone Fixo"
+                                    android:inputType="none|phone"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000" />
+                            </RelativeLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <EditText
+                                    android:id="@+id/Edit_TelCelUpdate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:ems="10"
+                                    android:hint="Celular"
+                                    android:inputType="none|phone"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000" />
+                            </RelativeLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <EditText
+                                    android:id="@+id/Edit_CadPacEmailUpdate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:ems="10"
+                                    android:hint="E-mail"
+                                    android:inputType="none|textEmailAddress"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000" />
+                            </RelativeLayout>
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#23A4CA">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/textView84"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="Endereço"
+                                    android:textAlignment="center"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <EditText
+                                        android:id="@+id/Edit_CepEndUpdate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="80dp"
+                                        android:drawableRight="@drawable/backwhite"
+                                        android:ems="10"
+                                        android:hint="CEP:"
+                                        android:inputType="none|number"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="1">
+
+                                    <Button
+                                        android:id="@+id/BtnLoadCepUpdate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/FacialMap"
+                                        android:drawableRight="@drawable/searchwhite"
+                                        android:text="Preencher"
+                                        android:textColor="#FFFFFF" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <EditText
+                                    android:id="@+id/Edit_EndUpdate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:ems="10"
+                                    android:hint="Endereço:"
+                                    android:inputType="textPersonName"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000" />
+
+                            </RelativeLayout>
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </RelativeLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                            </RelativeLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <EditText
+                                        android:id="@+id/Edit_EndCompUpdate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="80dp"
+                                        android:ems="10"
+                                        android:hint="Complemento:"
+                                        android:inputType="textPersonName"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <EditText
+                                        android:id="@+id/Edit_EndNumUpdate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="80dp"
+                                        android:ems="10"
+                                        android:hint="Número"
+                                        android:inputType="none|number"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <EditText
+                                    android:id="@+id/Edit_BairroUpdate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:ems="10"
+                                    android:hint="Bairro:"
+                                    android:inputType="textPersonName"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000" />
+                            </RelativeLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <EditText
+                                        android:id="@+id/Edit_EndMuniUpdate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="80dp"
+                                        android:ems="10"
+                                        android:hint="Município:"
+                                        android:inputType="textPersonName"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <EditText
+                                        android:id="@+id/Edit_EndEstadoUpdate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="80dp"
+                                        android:ems="10"
+                                        android:hint="Estado:"
+                                        android:inputType="textPersonName"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/BtnUPVoltarMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="1dp"
+                        android:background="#23A4CA"
+                        android:drawableRight="@drawable/backwhite"
+                        android:text="Voltar"
+                        android:textColor="#FFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/BtnUPSalvarPaciente"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="#23A4CA"
+                        android:drawableRight="@drawable/disquetwhite"
+                        android:paddingRight="2dp"
+                        android:text="Salvar"
+                        android:textColor="#FFFFFF" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
